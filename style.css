@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgb(169, 228, 169);
+}
+
+#panel{
+    overflow: hidden;               /*  important point   */
+    border-radius: 10px;
+    width: 80%;
+    height: 85%;
+    background: #fff;
+}
+
+#panelTop{
+    justify-content: space-between;
+    padding: 0 8%;
+    color: #fff;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background:rgb(75, 113, 75);
+}
+.elem{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 20%; */
+}
+.elem h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.box{
+    padding: 10px;
+    border-radius: 3px;
+    background: #fff;
+    color:rgb(75, 113, 75);
+    font-size: 20px;
+}
+
+#panelBottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 65px);
+}
+
+.bubble{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    background: rgb(91, 140, 91);
+    border-radius: 50%;
+    color: #fff;
+}
+.bubble:hover{
+    cursor: pointer;
+    background: rgb(75, 113, 75);
+}
+
+#gameover h2,#gameover h1{
+    display: flex;
+    justify-content: center;
+}
+
+#gameover button{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+}
